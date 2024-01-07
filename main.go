@@ -10,7 +10,7 @@ import (
 const (
 	WIDTH  = 1000
 	HEIGHT = WIDTH
-	NUM    = 250
+	NUM    = 100
 	SIZE   = WIDTH / NUM
 	GAP    = 0
 	SKIP   = 1
@@ -21,7 +21,7 @@ func main() {
 	rl.SetWindowPosition(200, 1440/2-HEIGHT/2)
 	defer rl.CloseWindow()
 
-	rl.SetTargetFPS(144)
+	rl.SetTargetFPS(30)
 
 	var grid [NUM][NUM]int
 
